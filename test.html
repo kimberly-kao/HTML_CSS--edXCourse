@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <title>Meet Kimberly</title>
+        <meta charset = "ufc-8">
     </head>
     <body>
         <h1>Kimberly Kao</h1>
@@ -10,16 +11,46 @@
             Hello everyone! It is great to meet you! I'm Kimberly, a student taking this course at edx!
             <br><!--This is a break tag-->Let me share a little about myself:
         </p>
-        <h2>My Hobbies are:</h2>
-        <ol><!--This means ordered list
-                <ul> means unordered list-->
-            <li>Tennis</li>
-            <li>Coding</li>
-            <li>Embroidering</li>
-        </ol>
-        <p>
-            <!--<a href = "website">link title</a> is to link a website-->
-            Come see my projects at <a href="https://github.com/kimberly-kao">@kimberly-kao</a>
-        </p>
+        <nav>
+            <ul>
+                <li><a href="#hobbies">My Hobbies</a></li>
+                <li><a href="#attributes">Playing with Attributes</a></li>
+            </ul>
+        </nav>
+        <article id="hobbies">
+            <header>
+                <h2>My Hobbies are:</h2>
+            </header>
+            <ol><!--This means ordered list
+                    <ul> means unordered list-->
+                <li>Tennis</li>
+                <li>Coding</li>
+                <li>Embroidering</li>
+            </ol>
+            <p>
+                <!--<a href = "website">link title</a> is to link a website-->
+                Come see my projects at <a href="https://github.com/kimberly-kao">@kimberly-kao</a>
+            </p>
+        </article>
+        <article id="attributes">
+            <header>
+                <h2>Playing with Attributes</h2>
+            </header>
+            <p id = "p1"><!--id HAVE to be unique-->
+                This is a paragraph
+            </p> 
+            <ol start="11" title="Activity List" reversed >
+                <li>my first activity</li>
+                <li>next activity</li>
+                <li>next item</li>
+            </ol>
+
+            <h4>This trys out the details element tag and mark element tag</h4>
+            <details>
+                <summary><mark>Kimberly Kao</mark></summary>
+                <p>Freshman in college</p>
+                <p>Age: 18</p>
+            </details>
+        </article>
     </body>
 </html>
