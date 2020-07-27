@@ -2,6 +2,12 @@
             nav{
                 background:lightblue;
                 width: 20em;
+                position:fixed;
+                top: 4rem;
+                opacity: 0.8;
+            }
+            nav:hover{
+                opacity:1.0;
             }
             nav ul{
                 padding-left:25px;
@@ -10,6 +16,10 @@
                 background:cadetblue;
                 text-align: center;
                 margin: 0px;
+                position: fixed;
+                width: 100%;
+                top: 0;
+
             }
             img{
                 width: 400px;
@@ -18,9 +28,17 @@
             }
             article{
                 margin-left: 50px;
+                min-width: 30rem;
+                max-width: 50rem;
+                margin: auto;
+                
+            }
+            article#teriyakichicken{
+                margin-top: 10rem;
             }
             body{
                 margin:0px;
+                font-size:120%;
             }
             table{
                 margin-left: 2em;
